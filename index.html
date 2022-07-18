@@ -18,21 +18,35 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Assets/styles/styles.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
+    <!-- Jumbotron header -->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="todaysTime" class="lead"></p>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
+    <main class="jumbotron">
+      <!--<h3 class="" id="currentMonth"></h3>-->
+      <form id="alldays">
+    <!-- Schedule boxes --><!--<label for="am9reg"><img src="./Assets/images/x-indicator.png" /></label>-->
+        <label for="am9" class="lead">9 AM</label> <textarea placeholder="Click to enter your event" rows="5" cols="150" id="am9" class="hourschedule"></textarea><button type="button" class="setDateAndTime lead" id="am9reg">Save event</button><br />
+        <label for="am10" class="lead">10 AM</label> <textarea value="Click to enter your event" id="am10" rows="5" cols="150" class="hourschedule"></textarea><button type="button" class="setDateAndTime lead" id="am10reg">Save event</button><br />
+        <label for="am11" class="lead">11 AM</label> <textarea value="Click to enter your event" id="am11" rows="5" cols="150" class="hourschedule"></textarea><button type="button" class="setDateAndTime lead" id="am11reg">Save event</button><br />
+        <label for="pm12" class="lead">12 PM</label> <textarea value="Click to enter your event" id="pm12" rows="5" cols="150" class="hourschedule"></textarea><button type="button" class="setDateAndTime lead" id="pm12reg">Save event</button><br />
+        <label for="pm1" class="lead">1 PM</label> <textarea value="Click to enter your event" id="pm1" rows="5" cols="150" class="hourschedule"></textarea><button type="button" class="setDateAndTime lead" id="pm1reg">Save event</button><br />
+        <label for="pm2" class="lead">2 PM</label> <textarea value="Click to enter your event" id="pm2" rows="5" cols="150" class="hourschedule"></textarea><button type="button" class="setDateAndTime lead" id="pm2reg">Save event</button><br />
+        <label for="pm3" class="lead">3 PM</label> <textarea value="Click to enter your event" id="pm3" rows="5" cols="150" class="hourschedule"></textarea><button type="button" class="setDateAndTime lead" id="pm3reg">Save event</button><br />
+        <label for="pm4" class="lead">4 PM</label> <textarea value="Click to enter your event" id="pm4" rows="5" cols="150" class="hourschedule"></textarea><button type="button" class="setDateAndTime lead" id="pm4reg">Save event</button><br />
+        <label for="pm5" class="lead">5 PM</label> <textarea value="Click to enter your event" id="pm5" rows="5" cols="150" class="hourschedule"></textarea><button type="button" class="setDateAndTime lead" id="pm5reg">Save event</button><br />
+      </form>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/js/script.js"></script>
   </body>
 </html>

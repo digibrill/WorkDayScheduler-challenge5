@@ -1,0 +1,62 @@
+p#todaysTime{
+    width: 100%;
+    padding: 0;
+    margin: 0 0 20px;
+}
+form{
+    /*width: 80%;*/
+    padding: 0;
+    margin: 0;
+}
+label{
+    display: inline-block;
+    clear: both;
+    /*height: 100px;*/
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    font-weight: bold;
+    vertical-align: top;
+}
+textarea{
+    width: 80%;
+    /*min-width:250px;*/
+    border: 1px solid #0000FF;
+    background-color: #ddd;
+    display: inline-block;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: top;
+}
+button[type="button"]{
+    width: 100px;
+    border: 1px solid #000033;
+    background-color: #900;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+button[type="button"]:hover{
+    color: #fff;
+    background-color: #500;
+}
+@media screen and (max-width: 886px){
+    button[type="button"]{
+         margin-left:64px;
+         display:block;
+    }
+}
+input[type="checkbox"] + label {
+    padding: 0;
+    background-size: 50%;
+    background: url("./Assets/images/x-indicator.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: 50%;
+    display: inline-block;
+}
