@@ -2,13 +2,14 @@
 // https://github.com/digibrill/WorkDayScheduler-challenge5
 
 var week = [];
-/* Todays Time */
+/* Page Elements */
 var todaysTimeEl = document.getElementById('todaysTime');
 var currentMonthEl = document.getElementById('currentMonth');
 var currentHour = moment().format('HH');
 var hourArray = $( "#alldays div" ).toArray();
 var hours = [['am9',9],['am10',10],['am11',11],['pm12',12],['pm1',13],['pm2',14],['pm3',15],['pm4',16],['pm5',17]];
 
+// time/date at top of page
 function updateTime() {
     var currentTime = moment().format("[The current date and time is:] MMMM Do YYYY, hh:mm:ss a");
     //var currentMonth = moment().format("MMMM");
@@ -17,14 +18,14 @@ function updateTime() {
 };
 setInterval(updateTime, 1000);
 
-// Set checkbox click actions
+// Set button click actions
 var i = 0;
 while(i < $(".setDateAndTime").length){
     $(".setDateAndTime")[i].addEventListener("click",getDay);
    i++;
 }
 
-// On clicking checkbox get day's events and send to saveDay()
+// On clicking button get day's events and send to saveDay()
 function getDay(e){
     if(e.target.previousSibling.value !== ''){
         //console.log('test');
@@ -32,7 +33,9 @@ function getDay(e){
     }else{
         //e.target.preventDefault();
     }
-    //location.reload();
+
+    //reload page on change
+    location.reload();
 }
 
 // Save day's events
@@ -46,7 +49,9 @@ function saveDay(sentId, sentValue){
     // get saved scores from localstorage, or if not any, set to empty array
     week = JSON.parse(window.localStorage.getItem("week")) || [];
     for(k = 0; k < week.length; k++){
-        console.log(week[k]);
+        //console.log(week[k]);
+
+        // remove prior events for day
         if(week[k].day == saveDayObj.day){
             //saveDayObj.eventName = week[k].eventName;
            
@@ -103,7 +108,7 @@ function loadWeek(){
     }
 }
 
-// User leaves textarea
+// User leaves textarea - Not used right now
 /*$('#alldays').delegate('textarea.edit','change',function() {
     location.reload();
 });*/
