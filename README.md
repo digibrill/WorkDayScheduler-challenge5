@@ -4,7 +4,7 @@
 
 I hope this works right!
 
-![portfolio demo](./Assets/images/portfolioscreenshot.jpg)
+![portfolio demo](./Assets/images/challenge5screencap.png)
 
 ## My links
 
