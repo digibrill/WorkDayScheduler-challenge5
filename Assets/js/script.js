@@ -89,7 +89,7 @@ function loadWeek(){
                         
                         document.getElementById(hours[j][0]).style.backgroundColor = "#f00";
 
-                    // past blue
+                    // past grey
                     }else if(hours[j][1] < currentHour){
 
                         document.getElementById(hours[j][0]).style.backgroundColor = "#ddd";
