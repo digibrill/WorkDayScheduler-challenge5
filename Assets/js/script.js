@@ -35,7 +35,7 @@ function getDay(e){
     }
 
     //reload page on change
-    location.reload();
+    loadWeek();
 }
 
 // Save day's events
@@ -52,7 +52,7 @@ function saveDay(sentId, sentValue){
         //console.log(week[k]);
 
         // remove prior events for day
-        if(week[k].day == saveDayObj.day){
+        if(week[k].day == saveDayObj.day){ //|| week[k].eventName == ""
             //saveDayObj.eventName = week[k].eventName;
            
             week.splice(k, 1); // How can I remove the prior value?
